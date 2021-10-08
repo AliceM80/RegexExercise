@@ -30,6 +30,7 @@ System.out.println(removeVowels3(sourceText3));
 
     public static String removeVowels2(String sourceText2) {
 
+
         String str = sourceText2.toLowerCase();
         String replace = "";
         Pattern pt = Pattern.compile("[aeiou]");
@@ -43,12 +44,11 @@ System.out.println(removeVowels3(sourceText3));
     public static String removeVowels3(String sourceText3) {
 
         String str = sourceText3.toLowerCase();
-        String replace = "";
+        String strnew = str.replaceAll("[aeiouAEIOU]","");
         Pattern pt = Pattern.compile("[aeiou]");
         Matcher mt = pt.matcher(str);
 
-        str = mt.replaceAll(replace);
-        return str;
+        return strnew;
 
     }
     }
